@@ -1,0 +1,22 @@
+{"properties": [
+  {
+    "name": "Spring.DataSource.url",
+    "type": "java.lang.String",
+    "description": "A description for 'Spring.DataSource.url'"
+  },
+  {
+    "name": "Spring.DataSource.username",
+    "type": "java.lang.String",
+    "description": "A description for 'Spring.DataSource.username'"
+  },
+  {
+    "name": "Spring.DataSource.password",
+    "type": "java.lang.String",
+    "description": "A description for 'Spring.DataSource.password'"
+  },
+  {
+    "name": "Spring.jpa.Properties.Hibernate.dialect",
+    "type": "java.lang.String",
+    "description": "A description for 'Spring.jpa.Properties.Hibernate.dialect'"
+  }
+]}
