@@ -12,7 +12,7 @@ public class UserServiceImpl implements IUserService {
 
 	@Autowired
 	private UserRepository repository;
-	
+
 	public UserServiceImpl(UserRepository repository) {
 		super();
 		this.repository = repository;
@@ -20,7 +20,7 @@ public class UserServiceImpl implements IUserService {
 
 	@Override
 	public RegisterEntity insertUser(RegisterEntity register) {
-		
+
 		return repository.save(register);
 	}
 

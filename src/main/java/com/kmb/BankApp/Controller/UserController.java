@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.kmb.BankApp.Entity.RegisterEntity;
 import com.kmb.BankApp.Service.IUserService;
+
 @CrossOrigin(origins = "*")
 @RestController
 @RequestMapping("/BankApp")
@@ -24,11 +25,11 @@ public class UserController {
 		super();
 		this.service = service;
 	}
-	
+
 	// create insertUser REST API
 	// http://localhost:8080/BankApp/register
 	@PostMapping("/register")
-	public ResponseEntity<RegisterEntity> insertUser(@RequestBody RegisterEntity register){
+	public ResponseEntity<RegisterEntity> insertUser(@RequestBody RegisterEntity register) {
 		return new ResponseEntity<RegisterEntity>(service.insertUser(register), HttpStatus.CREATED);
 	}
 }
