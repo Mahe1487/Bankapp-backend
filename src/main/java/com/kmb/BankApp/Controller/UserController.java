@@ -29,7 +29,7 @@ public class UserController {
 	// create insertUser REST API
 	// http://localhost:8080/BankApp/register
 	@PostMapping("/register")
-	public ResponseEntity<RegisterEntity> insertUser(@RequestBody RegisterEntity register) {
-		return new ResponseEntity<RegisterEntity>(service.insertUser(register), HttpStatus.CREATED);
+	public ResponseEntity<String> insertUser(@RequestBody RegisterEntity register) {
+		return new ResponseEntity<String>("User Saved Successfully!...", HttpStatus.CREATED);
 	}
 }
